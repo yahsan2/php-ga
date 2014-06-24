@@ -1,3 +1,17 @@
+### Image analytics
+```
+<img src="/php-ga/" alt="">
+```
+
+####params
+- url   (default: "/?utm_medium=open_email")
+- title (default: "Open Email")
+- page  (default: "blank.gif")
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+
+
 Server-Side Google Analytics Client
 ===========================================================================================
 
