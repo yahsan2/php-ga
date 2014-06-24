@@ -4,7 +4,7 @@ set config.php
 define('GA_ID', 'UA-xxxxxxx-x');
 define('SITE_HOST', 'example.com');
 ```
-
+use
 ```
 <img src="/php-ga/" alt="">
 ```
