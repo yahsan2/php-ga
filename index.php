@@ -1,4 +1,5 @@
 <?php
+include('config.php');
 include('src/autoload.php');
 
 $filname = isset($_GET['filname'])? '../'.$_GET['filname'] : 'blank.gif';
@@ -8,7 +9,7 @@ $url = isset($_GET['url'])? $_GET['url'] : '/?utm_medium=open_email';
 use UnitedPrototype\GoogleAnalytics;
 
 // Initilize GA Tracker
-$tracker = new GoogleAnalytics\Tracker('UA-xxxxxxx-x', 'example.com');
+$tracker = new GoogleAnalytics\Tracker(GA_ID, SITE_HOST);
 
 // Assemble Visitor information
 // (could also get unserialized from database)
