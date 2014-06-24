@@ -2,7 +2,7 @@
 include('config.php');
 include('src/autoload.php');
 
-$filname = isset($_GET['filname'])? '../'.$_GET['filname'] : 'blank.gif';
+$filename = isset($_GET['filename'])? '../'.$_GET['filename'] : 'blank.gif';
 $title = isset($_GET['title'])? $_GET['title'] : 'Open Email';
 $url = isset($_GET['url'])? $_GET['url'] : '/?utm_medium=open_email';
 
@@ -29,8 +29,8 @@ $page->setTitle($title);
 // Track page view
 $tracker->trackPageview($page, $session, $visitor);
 
-$fp = fopen($filname, "r");
-$imgdat = fread($fp, filesize($filname));
+$fp = fopen($filename, "r");
+$imgdat = fread($fp, filesize($filename));
 fclose($fp);
 header('Content-type: image/jpeg');
 echo $imgdat;
