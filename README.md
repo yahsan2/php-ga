@@ -1,4 +1,10 @@
 ### Image analytics
+set config.php
+```
+define('GA_ID', 'UA-xxxxxxx-x');
+define('SITE_HOST', 'example.com');
+```
+
 ```
 <img src="/php-ga/" alt="">
 ```
